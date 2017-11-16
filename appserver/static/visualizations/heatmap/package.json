@@ -1,0 +1,21 @@
+{
+  "name": "heatmap",
+  "version": "1.0.0",
+  "description": "Port of Plotly.js 3D scatter plot.",
+  "main": "visualization.js",
+  "scripts": {
+    "build": "PROD=1 $SPLUNK_HOME/bin/splunk cmd node ./node_modules/webpack/bin/webpack.js",
+    "devbuild": "$SPLUNK_HOME/bin/splunk cmd node ./node_modules/webpack/bin/webpack.js --progress",
+    "watch": "$SPLUNK_HOME/bin/splunk cmd node ./node_modules/webpack/bin/webpack.js -d --watch --progress"
+  },
+  "author": "Xander Johnson @metasyn",
+  "license": "MIT",
+  "devDependencies": {
+    "webpack": "^1.12.6"
+  },
+  "dependencies": {
+    "jquery": "^2.2.2",
+    "plotly.js": "^1.7.0",
+    "underscore": "^1.8.3"
+  }
+}

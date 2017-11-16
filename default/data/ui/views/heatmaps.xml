@@ -1,0 +1,57 @@
+<dashboard>
+  <label>Heatmaps</label>
+  <row>
+    <panel>
+      <title>index=internal | head 1000 | correlate</title>
+      <viz type="heatmap_app.heatmap">
+        <title>Please note you may need to change the margins in the formatting dropdown if your labels are long.</title>
+        <search>
+          <query>| inputlookup internal.csv</query>
+          <earliest>0</earliest>
+        </search>
+        <option name="heatmap_app.heatmap.lowColor">#000</option>
+        <option name="heatmap_app.heatmap.highColor">#6db7ef</option>
+        <option name="heatmap_app.heatmap.showScale">1</option>
+        <option name="heatmap_app.heatmap.leftMargin">150</option>
+        <option name="heatmap_app.heatmap.rightMargin">150</option>
+        <option name="heatmap_app.heatmap.topMargin">150</option>
+        <option name="heatmap_app.heatmap.bottomMargin">15</option>
+      </viz>
+    </panel>
+    <panel>
+      <title>| inputlookup leafcorrelation.csv</title>
+      <viz type="heatmap_app.heatmap">
+        <search>
+          <query>| inputlookup leafcorrelation.csv | table feature species specimen_number ecentricity aspect elongation solidity stochastic_convexity isoperimetric maximal_indentation lobedness avg_intensity avg_contrast smoothness third_moment uniformity entropy</query>
+        </search>
+        <option name="heatmap_app.heatmap.lowColor">#555</option>
+        <option name="heatmap_app.heatmap.highColor">#65a637</option>
+        <option name="heatmap_app.heatmap.showScale">1</option>
+        <option name="heatmap_app.heatmap.leftMargin">150</option>
+        <option name="heatmap_app.heatmap.rightMargin">150</option>
+        <option name="heatmap_app.heatmap.topMargin">100</option>
+        <option name="heatmap_app.heatmap.bottomMargin">15</option>
+      </viz>
+    </panel>
+  </row>
+  <row>
+    <panel>
+      <title>| timechart dc(src) by host</title>
+      <viz type="heatmap_app.heatmap">
+        <title>Honeypot data from Data Driven Security</title>
+        <search>
+          <query>| inputlookup marx_counts.csv</query>
+          <earliest>0</earliest>
+          <latest></latest>
+        </search>
+        <option name="heatmap_app.heatmap.lowColor">#555</option>
+        <option name="heatmap_app.heatmap.highColor">#d93f3c</option>
+        <option name="heatmap_app.heatmap.showScale">1</option>
+        <option name="heatmap_app.heatmap.leftMargin">150</option>
+        <option name="heatmap_app.heatmap.rightMargin">150</option>
+        <option name="heatmap_app.heatmap.topMargin">50</option>
+        <option name="heatmap_app.heatmap.bottomMargin">15</option>
+      </viz>
+    </panel>
+  </row>
+</dashboard>

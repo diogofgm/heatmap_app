@@ -1,0 +1,89 @@
+<form class="splunk-formatter-section" section-label="Color">
+
+    <div class="control-group">
+        <label class="control-label">Low Color</label>
+        <div class="controls controls-fill">
+            <splunk-color-picker name="display.visualizations.custom.heatmap_app.heatmap.lowColor" value="#1E93C6"></splunk-color-picker>
+        </div>
+    </div>
+
+        <div class="control-group">
+        <label class="control-label">High Color</label>
+        <div class="controls controls-fill">
+            <splunk-color-picker name="display.visualizations.custom.heatmap_app.heatmap.highColor" value="#D6563C"></splunk-color-picker>
+        </div>
+    </div>
+
+    <div class="control-group">
+        <label class="control-label">Show Scale</label>
+        <div class="controls controls-fill">
+            <splunk-radio-input name="display.visualizations.custom.heatmap_app.heatmap.showScale" value="1">
+                <option value="1">True</option>
+                <option value="0">False</option>
+            </splunk-radio-input>
+        </div>
+    </div>
+
+</form>
+
+<form class="splunk-formatter-section" section-label="Margins">
+
+    <div class="control-group">
+        <label class="control-label">Left Margin</label>
+        <div class="controls controls-fill">
+            <splunk-text-input name="display.visualizations.custom.heatmap_app.heatmap.leftMargin" value="150"></splunk-text-input>
+        </div>
+    </div>
+
+    <div class="control-group">
+        <label class="control-label">Right Margin</label>
+        <div class="controls controls-fill">
+            <splunk-text-input name="display.visualizations.custom.heatmap_app.heatmap.rightMargin" value="150"></splunk-text-input>
+        </div>
+    </div>
+
+    <div class="control-group">
+        <label class="control-label">Top Margin</label>
+        <div class="controls controls-fill">
+            <splunk-text-input name="display.visualizations.custom.heatmap_app.heatmap.topMargin" value="150"></splunk-text-input>
+        </div>
+    </div>
+
+    <div class="control-group">
+        <label class="control-label">Bottom Margin</label>
+        <div class="controls controls-fill">
+            <splunk-text-input name="display.visualizations.custom.heatmap_app.heatmap.bottomMargin" value="15"></splunk-text-input>
+        </div>
+    </div>
+</form>
+
+
+<form class="splunk-formatter-section" section-label="X-Axis">
+    <div class="control-group">
+        <label class="control-label">Label</label>
+        <div class="controls controls-fill">
+            <splunk-text-input name="display.visualizations.custom.heatmap_app.heatmap.xTitle"></splunk-text-input>
+        </div>
+    </div>
+     <div class="control-group">
+        <label class="control-label">Label Rotation</label>
+        <div class="controls controls-fill">
+            <splunk-text-input name="display.visualizations.custom.heatmap_app.heatmap.xAngle"></splunk-text-input>
+        </div>
+    </div>
+</form>
+
+<form class="splunk-formatter-section" section-label="Y-Axis">
+    <div class="control-group">
+        <label class="control-label">Lanel</label>
+        <div class="controls controls-fill">
+            <splunk-text-input name="display.visualizations.custom.heatmap_app.heatmap.yTitle"></splunk-text-input>
+        </div>
+    </div>
+    <div class="control-group">
+        <label class="control-label">Label Rotation</label>
+        <div class="controls controls-fill">
+            <splunk-text-input name="display.visualizations.custom.heatmap_app.heatmap.yAngle"></splunk-text-input>
+        </div>
+    </div>
+</form>
