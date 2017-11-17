@@ -28,8 +28,6 @@ define([
         //  'config' will be the configuration property object
         updateView: function(data, config) {
 
-            console.log('update')
-
             // clear for re-draw
             $('#' + this.id).empty()
 
@@ -95,8 +93,10 @@ define([
               width: this.$el.width()
             };
 
+            var container = this.$el.children('.splunk-heatmap')[0]
+
             Plotly.newPlot(
-                this.$el.children('.splunk-heatmap')[0],
+                container,
                 data, 
                 layout,
                 {
@@ -108,8 +108,6 @@ define([
                     modeBarButtonsToRemove: ['sendDataToCloud', 'resetCameraLastSave3d']
                 }
             );
-
-
         },
 
         // Search data params
@@ -201,6 +199,6 @@ define([
                 $('#' + this.id + ' .svg-container').width(this.$el.width())
                 this.invalidateUpdateView();
             }
-        }
+        },
     });
 });
