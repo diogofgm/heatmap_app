@@ -1,8 +1,8 @@
 define([
             'jquery',
             'underscore',
-            'vizapi/SplunkVisualizationBase',
-            'vizapi/SplunkVisualizationUtils',
+            'api/SplunkVisualizationBase',
+            'api/SplunkVisualizationUtils',
             'plotly.js'
         ],
         function(
