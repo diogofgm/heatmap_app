@@ -1,11 +1,11 @@
 {
   "schemaVersion": "2.0.0",
   "info": {
-    "title": "wivel Secure AuthControl Sentry Add-on for Splunk",
+    "title": "Heatmap - Custom Visualization",
     "id": {
       "group": null,
-      "name": "TA-swivel_sentry",
-      "version": "1.0.1"
+      "name": "heatmap_app",
+      "version": "1.0.2"
     },
     "author": [
       {
@@ -15,19 +15,18 @@
       }
     ],
     "releaseDate": null,
-    "description": "wivel Secure AuthControl Sentry Add-on for Splunk",
+    "description": "Heatmap - Custom Visualization",
     "classification": {
       "intendedAudience": "IT",
       "categories": [
-        "Security, Fraud & Compliance",
-        "IT Operations"
+        "Utilities"
       ],
       "developmentStatus": "Production/Stable"
     },
     "commonInformationModels": null,
     "license": {
-      "name": null,
-      "text": null,
+      "name": "LICENSE",
+      "text": "LICENSE",
       "uri": null
     },
     "privacyPolicy": {
