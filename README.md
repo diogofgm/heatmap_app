@@ -1,4 +1,4 @@
-# Heatmap - Custom Visualization
+# Heatmap - Custom Visualization (Deprecated)
 
 [![AppInspect](https://github.com/diogofgm/heatmap_app/actions/workflows/appinspect.yml/badge.svg)](https://github.com/diogofgm/heatmap_app/actions/workflows/appinspect.yml)
 
